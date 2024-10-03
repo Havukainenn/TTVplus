@@ -1,0 +1,38 @@
+/* Hide the featured content carousel */
+.featured-content-carousel,
+.front-page-carousel,
+[data-a-target="front-page-carousel"] {
+    display: none !important;
+}
+
+/* Hide the headliner div and related containers */
+[data-a-target="frontpage-headliner"],
+.headliner-ad,
+[data-a-target="frontpage-headliner-layout"] {
+    display: none !important;
+}
+
+[class*="storiesLeftNavSection"] {
+    display: none !important;
+}
+
+/* Hide the "Show More" button */
+.side-nav-show-more-toggle__button,
+[data-a-target="side-nav-show-more-button"] {
+    display: none !important;
+}
+
+/* Adjust the main content container to remove top margin and padding */
+[data-a-target="main-content"] {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+}
+
+/* Remove any residual spacing from sibling elements */
+.headliner-ad ~ *,
+[data-a-target="frontpage-headliner-layout"] ~ *,
+[data-a-target="frontpage-headliner"] ~ *,
+.front-page-carousel ~ * {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+}
